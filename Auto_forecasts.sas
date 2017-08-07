@@ -395,7 +395,7 @@ QUIT;\par
 \par
 /*Enter the email to which you want to which you want to send either of the files and invoke the macro*/\par
 \par
-%macro email(email=abhinav.mathur@electrolux.com);\par
+%macro email(email=abhinav.mathur@abc.com);\par
 %let dir = %sysfunc(pathname(WORK));\par
 \par
 filename tempfile "&dir.\\DPA.parameters";\par
@@ -410,7 +410,7 @@ ods pdf close;\par
 \par
 filename outbox email "&email" \par
          subject="Your DPA Report"\par
-         replyto="abhinav.mathur@electrolux.com" \par
+         replyto="abhinav.mathur@abc.com" \par
          attach="&dir.\\parameters.pdf";\par
                                                                             \par
 data _null_;                                              \par

@@ -61,7 +61,7 @@ b$dist_km <- (b$dist_km)^2
 
 library(gbm)
 gbm = gbm(trip_duration~dist_km+passenger_count+h+m+day+dist_lon+dist_lat, a,
-          n.trees=1000,
+          n.trees=100,
           shrinkage=0.01,
           distribution="gaussian",
           interaction.depth=4,
